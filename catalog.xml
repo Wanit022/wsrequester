@@ -5,4 +5,6 @@
     <system systemId="http://www.learnwebservices.com/services/hello?wsdl=HelloEndpoint.wsdl" uri="src/conf/xml-resources/web-service-references/hello/wsdl/www.learnwebservices.com/services/hello.wsdl_HelloEndpoint.wsdl"/>
     <system systemId="http://www.dneonline.com/calculator.asmx?WSDL" uri="src/conf/xml-resources/web-service-references/calculator_1/wsdl/www.dneonline.com/calculator.asmx.wsdl"/>
     <system systemId="http://webservices.daehosting.com/services/isbnservice.wso?WSDL" uri="src/conf/xml-resources/web-service-references/isbnservice/wsdl/webservices.daehosting.com/services/isbnservice.wso.wsdl"/>
+    <system systemId="http://localhost:8080/ws_provider/GradeCalculationService?WSDL" uri="src/conf/xml-resources/web-service-references/GradeCalculationService/wsdl/localhost_8080/ws_provider/GradeCalculationService.wsdl"/>
+    <system systemId="http://localhost:8080/ws_provider/GradeCalculationService?xsd=1" uri="src/conf/xml-resources/web-service-references/GradeCalculationService/wsdl/localhost_8080/ws_provider/GradeCalculationService.xsd_1.xsd"/>
 </catalog>
