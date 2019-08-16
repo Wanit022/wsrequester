@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://hello.services.learnwebservices.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://learnwebservices.com/services/hello" name="SimpleHelloEndpointService" targetNamespace="http://hello.services.learnwebservices.com/">
+  <wsdl:import location="http://www.learnwebservices.com/services/hello?wsdl=HelloEndpoint.wsdl" namespace="http://learnwebservices.com/services/hello">
+    </wsdl:import>
+  <wsdl:binding name="SimpleHelloEndpointServiceSoapBinding" type="ns1:HelloEndpoint">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SayHello">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="SayHello">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SayHelloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SimpleHelloEndpointService">
+    <wsdl:port binding="tns:SimpleHelloEndpointServiceSoapBinding" name="SimpleHelloEndpointPort">
+      <soap:address location="http://www.learnwebservices.com/services/hello"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
